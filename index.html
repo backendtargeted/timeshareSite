@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Freedom Timeshare Exit - Exit Your Timeshare Safely and Legally
+    </title>
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lato/2.0/css/lato-font.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/open-sans/20.0.0/css/open-sans.min.css"
+    />
+    <!-- AOS Animation Library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <style>
+      :root {
+        --primary-color: #00468b;
+        --secondary-color: #0078d4;
+        --accent-color: #ff9e1b;
+        --text-color: #2c3e50;
+        --light-gray: #f7f9fc;
+        --white: #ffffff;
+        --gradient-bg: linear-gradient(135deg, #003366 0%, #0066a2 100%);
+        --card-shadow: 0 15px 30px rgba(0, 70, 139, 0.1);
+        --border-radius: 12px;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Open Sans", "Lato", sans-serif;
+      }
+
+      body {
+        color: var(--text-color);
+        background-color: var(--white);
+        line-height: 1.6;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      header {
+        background-color: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+        padding: 18px 0;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        border-bottom: 2px solid rgba(0, 70, 139, 0.1);
+        transition: all 0.3s ease;
+      }
+
+      .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: var(--primary-color);
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 30px;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: var(--text-color);
+        font-weight: 500;
+        transition: color 0.3s;
+      }
+
+      .nav-links a:hover {
+        color: var(--primary-color);
+      }
+
+      .cta-button {
+        background: var(--gradient-bg);
+        color: var(--white);
+        padding: 14px 28px;
+        border: none;
+        border-radius: var(--border-radius);
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: inline-block;
+        box-shadow: 0 10px 20px rgba(0, 70, 139, 0.2);
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+      }
+
+      .cta-button:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: var(--accent-color);
+        transition: all 0.4s ease-in-out;
+        z-index: -1;
+      }
+
+      .cta-button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 15px 30px rgba(0, 70, 139, 0.3);
+      }
+
+      .cta-button:hover:before {
+        width: 100%;
+      }
+
+      .hero {
+        padding: 180px 0 100px;
+        background-image: url("https://cdnjs.cloudflare.com/ajax/libs/browser-logos/74.0.0/edge/edge.svg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        position: relative;
+        text-align: center;
+        overflow: hidden;
+      }
+
+      .hero:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--gradient-bg);
+        opacity: 0.92;
+        z-index: 0;
+      }
+
+      .hero .container {
+        position: relative;
+        z-index: 1;
+      }
+
+      .hero h1 {
+        font-size: 54px;
+        font-weight: 800;
+        margin-bottom: 25px;
+        color: var(--white);
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        line-height: 1.2;
+        letter-spacing: -0.5px;
+        animation: fadeInUp 1s ease-out;
+      }
+
+      .hero p {
+        font-size: 22px;
+        font-weight: 400;
+        max-width: 800px;
+        margin: 0 auto 50px;
+        color: var(--white);
+        text-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+        animation: fadeInUp 1.2s ease-out;
+        opacity: 0.9;
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .consultation-form {
+        background-color: var(--white);
+        padding: 40px;
+        border-radius: var(--border-radius);
+        box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+        max-width: 500px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 2;
+        transform: translateY(0);
+        transition: all 0.4s ease;
+      }
+
+      .consultation-form:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+      }
+
+      .consultation-form:before {
+        content: "";
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        bottom: -10px;
+        left: -10px;
+        background: var(--accent-color);
+        z-index: -1;
+        border-radius: calc(var(--border-radius) + 5px);
+        opacity: 0.1;
+        transform: scale(0.98);
+        transition: all 0.4s ease;
+      }
+
+      .consultation-form:hover:before {
+        transform: scale(1);
+        opacity: 0.2;
+      }
+
+      .form-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 500;
+      }
+
+      .form-group input,
+      .form-group select {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+
+      .trust-badges {
+        padding: 80px 0;
+        background-color: var(--white);
+        text-align: center;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+      }
+
+      .badges-container {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        gap: 40px;
+        margin-top: 50px;
+        flex-wrap: wrap;
+      }
+
+      .badge {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 200px;
+        padding: 30px 20px;
+        border-radius: var(--border-radius);
+        background-color: var(--white);
+        box-shadow: var(--card-shadow);
+        transition: all 0.3s ease;
+      }
+
+      .badge:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 70, 139, 0.15);
+      }
+
+      .badge i {
+        font-size: 50px;
+        color: var(--primary-color);
+        margin-bottom: 20px;
+        transition: all 0.3s ease;
+      }
+
+      .badge:hover i {
+        color: var(--accent-color);
+        transform: scale(1.1);
+      }
+
+      .section-title {
+        font-size: 42px;
+        font-weight: 800;
+        margin-bottom: 25px;
+        text-align: center;
+        color: var(--primary-color);
+        position: relative;
+        display: inline-block;
+      }
+
+      .section-title:after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 4px;
+        background: var(--accent-color);
+        border-radius: 2px;
+      }
+
+      .section-subtitle {
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 60px;
+        text-align: center;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        color: var(--text-color);
+        opacity: 0.8;
+        line-height: 1.6;
+      }
+
+      .problem {
+        padding: 80px 0;
+      }
+
+      .problem-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+      }
+
+      .problem-text {
+        flex: 1;
+      }
+
+      .problem-image {
+        flex: 1;
+        text-align: center;
+      }
+
+      .solution {
+        padding: 80px 0;
+        background-color: var(--light-gray);
+      }
+
+      .benefits {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        margin-top: 50px;
+      }
+
+      .benefit-card {
+        background-color: var(--white);
+        padding: 40px 30px;
+        border-radius: var(--border-radius);
+        box-shadow: var(--card-shadow);
+        text-align: center;
+        transition: all 0.4s ease;
+        position: relative;
+        overflow: hidden;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        z-index: 1;
+      }
+
+      .benefit-card:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: var(--primary-color);
+        transition: all 0.4s ease;
+      }
+
+      .benefit-card:hover {
+        transform: translateY(-15px);
+        box-shadow: 0 30px 60px rgba(0, 70, 139, 0.12);
+      }
+
+      .benefit-card:hover:before {
+        height: 8px;
+        background: var(--accent-color);
+      }
+
+      .benefit-card i {
+        color: var(--primary-color);
+        margin-bottom: 25px;
+        transition: all 0.4s ease;
+      }
+
+      .benefit-card:hover i {
+        color: var(--accent-color);
+        transform: scale(1.1);
+      }
+
+      .benefit-card h3 {
+        margin-bottom: 20px;
+        color: var(--primary-color);
+        font-weight: 700;
+        font-size: 22px;
+      }
+
+      .process {
+        padding: 80px 0;
+      }
+
+      .steps {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        margin-top: 50px;
+      }
+
+      .step-card {
+        text-align: center;
+        position: relative;
+        padding: 40px 30px;
+        background-color: var(--white);
+        border-radius: var(--border-radius);
+        box-shadow: var(--card-shadow);
+        transition: all 0.4s ease;
+      }
+
+      .step-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 70, 139, 0.15);
+      }
+
+      .step-number {
+        background: var(--gradient-bg);
+        color: var(--white);
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 24px;
+        margin: 0 auto 25px;
+        position: relative;
+        z-index: 1;
+        box-shadow: 0 10px 20px rgba(0, 70, 139, 0.2);
+        transition: all 0.3s ease;
+      }
+
+      .step-card:hover .step-number {
+        background: var(--accent-color);
+        box-shadow: 0 15px 30px rgba(255, 158, 27, 0.3);
+        transform: scale(1.1);
+      }
+
+      .testimonials {
+        padding: 80px 0;
+        background-color: var(--light-gray);
+      }
+
+      .testimonial-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        margin-top: 50px;
+      }
+
+      .testimonial-card {
+        background-color: var(--white);
+        padding: 40px;
+        border-radius: var(--border-radius);
+        box-shadow: var(--card-shadow);
+        position: relative;
+        transition: all 0.4s ease;
+      }
+
+      .testimonial-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 70, 139, 0.15);
+      }
+
+      .testimonial-card:before {
+        content: "\f10d";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-size: 24px;
+        color: var(--primary-color);
+        opacity: 0.2;
+      }
+
+      .testimonial-text {
+        font-style: italic;
+        margin-bottom: 30px;
+        position: relative;
+        z-index: 1;
+        line-height: 1.8;
+        font-size: 16px;
+        color: var(--text-color);
+      }
+
+      .testimonial-author {
+        display: flex;
+        align-items: center;
+        border-top: 1px solid rgba(0, 0, 0, 0.05);
+        padding-top: 20px;
+      }
+
+      .author-image {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-right: 20px;
+        border: 3px solid rgba(0, 70, 139, 0.1);
+        transition: all 0.3s ease;
+      }
+
+      .testimonial-card:hover .author-image {
+        border-color: var(--accent-color);
+      }
+
+      .author-details h4 {
+        margin-bottom: 5px;
+        font-weight: 700;
+        color: var(--primary-color);
+      }
+
+      .about {
+        padding: 80px 0;
+      }
+
+      .about-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+      }
+
+      .about-text {
+        flex: 1;
+      }
+
+      .about-image {
+        flex: 1;
+        text-align: center;
+      }
+
+      .faq {
+        padding: 80px 0;
+        background-color: var(--light-gray);
+      }
+
+      .faq-item {
+        background-color: var(--white);
+        margin-bottom: 20px;
+        border-radius: var(--border-radius);
+        overflow: hidden;
+        box-shadow: var(--card-shadow);
+        transition: all 0.3s ease;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        padding: 0 20px 20px;
+      }
+
+      .faq-item:hover {
+        box-shadow: 0 15px 30px rgba(0, 70, 139, 0.1);
+      }
+
+      .faq-question {
+        padding: 25px 30px;
+        font-weight: 700;
+        font-size: 18px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: var(--primary-color);
+        transition: all 0.3s ease;
+        position: relative;
+      }
+
+      .faq-question:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        background: rgba(0, 0, 0, 0.1);
+      }
+
+      .cta-section {
+        padding: 120px 0;
+        text-align: center;
+        background: url("https://cdnjs.cloudflare.com/ajax/libs/browser-logos/74.0.0/edge/edge.svg"),
+          var(--gradient-bg);
+        background-size: cover, cover;
+        background-position: center, center;
+        background-blend-mode: overlay;
+        color: var(--white);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .cta-section:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--primary-color);
+        opacity: 0.85;
+        z-index: 0;
+      }
+
+      .cta-section .container {
+        position: relative;
+        z-index: 1;
+      }
+
+      .cta-section h2 {
+        font-size: 42px;
+        font-weight: 800;
+        margin-bottom: 25px;
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .cta-section p {
+        font-size: 20px;
+        max-width: 800px;
+        margin: 0 auto 40px;
+        opacity: 0.9;
+      }
+
+      .cta-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+      }
+
+      .secondary-cta {
+        background: transparent;
+        border: 2px solid var(--white);
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+      }
+
+      .secondary-cta:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: var(--white);
+        transition: all 0.4s ease-in-out;
+        z-index: -1;
+      }
+
+      .secondary-cta:hover {
+        color: var(--primary-color);
+      }
+
+      .secondary-cta:hover:before {
+        width: 100%;
+      }
+
+      /* Footer Styling Updates */
+      footer {
+        background-color: #2c3e50;
+        color: var(--white);
+        padding: 0;
+      }
+
+      .footer-top {
+        background-color: var(--white);
+        color: var(--text-color);
+        padding: 50px 0;
+        text-align: center;
+      }
+
+      .cta-container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .cta-container h2 {
+        font-size: 36px;
+        font-weight: 700;
+        color: var(--primary-color);
+        margin-bottom: 15px;
+      }
+
+      .cta-container p {
+        font-size: 18px;
+        margin-bottom: 25px;
+      }
+
+      .footer-main {
+        padding: 50px 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 40px;
+      }
+
+      .footer-company,
+      .footer-links,
+      .footer-contact,
+      .footer-legal {
+        padding: 0 20px;
+      }
+
+      footer h3 {
+        font-size: 18px;
+        margin-bottom: 20px;
+        color: var(--accent-color);
+        font-weight: 700;
+      }
+
+      footer ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      footer ul li {
+        margin-bottom: 10px;
+      }
+
+      footer ul li::before {
+        content: "•";
+        color: var(--accent-color);
+        display: inline-block;
+        width: 15px;
+        margin-left: -15px;
+      }
+
+      footer a {
+        color: var(--white);
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      footer a:hover {
+        color: var(--accent-color);
+      }
+
+      .copyright {
+        text-align: center;
+        padding-top: 30px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      @media (max-width: 768px) {
+        .header-content {
+          flex-direction: column;
+          gap: 20px;
+        }
+
+        .nav-links {
+          flex-direction: column;
+          gap: 15px;
+          text-align: center;
+        }
+
+        .hero h1 {
+          font-size: 36px;
+        }
+
+        .hero p {
+          font-size: 18px;
+        }
+
+        .problem-content,
+        .about-content {
+          flex-direction: column;
+        }
+
+        .cta-buttons {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container header-content">
+        <div class="logo">Freedom Timeshare Exit</div>
+        <nav class="nav-links">
+          <a href="#how-it-works">How It Works</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#about">About Us</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+        <a href="#consultation" class="cta-button">Free Consultation</a>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="consultation">
+      <div class="container">
+        <h1>Exit Your Timeshare Safely and Legally</h1>
+        <p>
+          With over 5 years of experience and a 98% success rate, we've helped
+          hundreds of clients like you regain their financial freedom.
+        </p>
+
+        <div class="consultation-form">
+          <h2 class="form-title">Schedule Your Free Consultation</h2>
+          <form>
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" required />
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" required />
+            </div>
+            <div class="form-group">
+              <label for="resort">Timeshare Resort (Optional)</label>
+              <input type="text" id="resort" />
+            </div>
+            <button type="submit" class="cta-button" style="width: 100%">
+              Get Started Now
+            </button>
+          </form>
+
+          <script>
+            document
+              .getElementById("consultationForm")
+              .addEventListener("submit", async (e) => {
+                e.preventDefault();
+
+                const formData = {
+                  firstName: document.getElementById("first-name").value,
+                  lastName: document.getElementById("last-name").value,
+                  email: document.getElementById("email").value,
+                  phone: document.getElementById("phone").value,
+                  resort: document.getElementById("resort").value,
+                };
+
+                try {
+                  const response = await fetch("/submit", {
+                    method: "POST",
+                    headers: {
+                      "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(formData),
+                  });
+
+                  const result = await response.json();
+                  if (result.success) {
+                    alert("Consultation request submitted successfully!");
+                    document.getElementById("consultationForm").reset();
+                  } else {
+                    alert(`Error: ${result.error}`);
+                  }
+                } catch (error) {
+                  alert("An error occurred. Please try again.");
+                }
+              });
+          </script>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust Badges Section -->
+    <section class="trust-badges">
+      <div class="container">
+        <h2 class="section-title">Why Thousands Trust Us</h2>
+        <div class="badges-container">
+          <div class="badge" data-aos="fade-up" data-aos-delay="100">
+            <i class="fas fa-users"></i>
+            <h3>500+ Clients Helped</h3>
+          </div>
+          <div class="badge" data-aos="fade-up" data-aos-delay="200">
+            <i class="fas fa-undo-alt"></i>
+            <h3>100% Money-Back Guarantee</h3>
+          </div>
+          <div class="badge" data-aos="fade-up" data-aos-delay="300">
+            <i class="fas fa-award"></i>
+            <h3>BBB A+ Rating</h3>
+          </div>
+          <div class="badge" data-aos="fade-up" data-aos-delay="400">
+            <i class="fas fa-dollar-sign"></i>
+            <h3>$1M+ in Fees Saved</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem">
+      <div class="container">
+        <h2 class="section-title">Feeling Trapped in Your Timeshare?</h2>
+        <p class="section-subtitle">
+          You're not alone. Many timeshare owners find themselves stuck with
+          rising maintenance fees and unused properties.
+        </p>
+
+        <div class="problem-content">
+          <div class="problem-text">
+            <h3>Are You Experiencing:</h3>
+            <ul>
+              <li>Skyrocketing maintenance fees?</li>
+              <li>Difficulty booking your preferred dates?</li>
+              <li>A timeshare you no longer use or can't afford?</li>
+              <li>Failed attempts to sell your timeshare?</li>
+              <li>Pressure from aggressive sales tactics?</li>
+            </ul>
+            <p>
+              These are common challenges faced by timeshare owners. The good
+              news is, you have options.
+            </p>
+          </div>
+          <div class="problem-image">
+            <img
+              src="/api/placeholder/400/300"
+              alt="Frustrated Timeshare Owner"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution">
+      <div class="container">
+        <h2 class="section-title">Our Timeshare Exit Solution</h2>
+        <p class="section-subtitle">
+          Freedom Timeshare Exit specializes in helping owners escape their
+          contracts legally and permanently, with no upfront fees.
+        </p>
+
+        <div class="benefits">
+          <div class="benefit-card" data-aos="zoom-in" data-aos-delay="100">
+            <i class="fas fa-balance-scale fa-3x"></i>
+            <h3>Experienced Team</h3>
+            <p>
+              Our specialists have decades of experience in timeshare law and
+              negotiation.
+            </p>
+          </div>
+          <div class="benefit-card" data-aos="zoom-in" data-aos-delay="200">
+            <i class="fas fa-shield-alt fa-3x"></i>
+            <h3>Money-Back Guarantee</h3>
+            <p>
+              If we can't cancel your contract, you get a full refund. No
+              questions asked.
+            </p>
+          </div>
+          <div class="benefit-card" data-aos="zoom-in" data-aos-delay="300">
+            <i class="fas fa-hand-holding-usd fa-3x"></i>
+            <h3>No Upfront Fees</h3>
+            <p>
+              You only pay after we've successfully terminated your timeshare
+              contract.
+            </p>
+          </div>
+          <div class="benefit-card" data-aos="zoom-in" data-aos-delay="400">
+            <i class="fas fa-user-tie fa-3x"></i>
+            <h3>Personalized Service</h3>
+            <p>
+              We develop a custom exit strategy based on your specific
+              situation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process" id="how-it-works">
+      <div class="container">
+        <h2 class="section-title">Our Simple 4-Step Process</h2>
+        <p class="section-subtitle">
+          We handle the entire exit process for you, from start to finish.
+        </p>
+
+        <div class="steps">
+          <div class="step-card" data-aos="fade-right" data-aos-delay="100">
+            <div class="step-number">1</div>
+            <h3>Free Consultation</h3>
+            <p>
+              We'll discuss your situation and determine if we can help you exit
+              your timeshare.
+            </p>
+          </div>
+          <div class="step-card" data-aos="fade-right" data-aos-delay="200">
+            <div class="step-number">2</div>
+            <h3>Custom Strategy</h3>
+            <p>
+              Our experts develop a personalized plan based on your specific
+              timeshare situation.
+            </p>
+          </div>
+          <div class="step-card" data-aos="fade-right" data-aos-delay="300">
+            <div class="step-number">3</div>
+            <h3>We Handle Everything</h3>
+            <p>
+              Our team manages all paperwork and communications with the resort
+              or developer.
+            </p>
+          </div>
+          <div class="step-card" data-aos="fade-right" data-aos-delay="400">
+            <div class="step-number">4</div>
+            <h3>Confirmation</h3>
+            <p>
+              You receive official confirmation that your timeshare has been
+              cancelled.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <h2 class="section-title">Success Stories from Our Clients</h2>
+        <p class="section-subtitle">
+          Don't just take our word for it. Hear from people just like you who
+          have successfully exited their timeshares.
+        </p>
+
+        <div class="testimonial-grid">
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="testimonial-text">
+              "Freedom Timeshare Exit was a lifesaver. I thought I was stuck
+              with my timeshare forever, but they got me out quickly and
+              painlessly. Their team was professional and kept me updated
+              throughout the process."
+            </div>
+            <div class="testimonial-author">
+              <img
+                src="/api/placeholder/60/60"
+                alt="Jane S."
+                class="author-image"
+              />
+              <div class="author-details">
+                <h4>Jane S.</h4>
+                <p>Texas</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="testimonial-text">
+              "I highly recommend Freedom Timeshare Exit. After struggling with
+              maintenance fees for years, I'm finally free from my timeshare
+              burden. They are professional, transparent, and effective."
+            </div>
+            <div class="testimonial-author">
+              <img
+                src="/api/placeholder/60/60"
+                alt="Mark T."
+                class="author-image"
+              />
+              <div class="author-details">
+                <h4>Mark T.</h4>
+                <p>New York</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="testimonial-text">
+              "I was skeptical at first, but Freedom Timeshare Exit delivered
+              exactly what they promised. After 8 months, I received
+              confirmation that my timeshare was cancelled. I'm now saving
+              $1,200 a year in fees!"
+            </div>
+            <div class="testimonial-author">
+              <img
+                src="/api/placeholder/60/60"
+                alt="Robert J."
+                class="author-image"
+              />
+              <div class="author-details">
+                <h4>Robert J.</h4>
+                <p>Florida</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="section-title">About Freedom Timeshare Exit</h2>
+        <p class="section-subtitle">
+          We're dedicated to helping timeshare owners regain their financial
+          freedom with integrity and transparency.
+        </p>
+
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              At Freedom Timeshare Exit, we understand the challenges and
+              frustrations of timeshare ownership. Our founder started this
+              company after witnessing firsthand how difficult it can be for
+              owners to exit their contracts.
+            </p>
+            <p>
+              Our mission is simple: to provide honest, effective, and
+              affordable timeshare exit solutions. We're not just another exit
+              company – we're advocates for consumers who have been misled or
+              taken advantage of by the timeshare industry.
+            </p>
+            <p>
+              With our team of experienced professionals, we've helped hundreds
+              of clients successfully exit their timeshares and reclaim their
+              financial freedom.
+            </p>
+          </div>
+          <div class="about-image">
+            <img
+              src="/api/placeholder/400/300"
+              alt="Freedom Timeshare Exit Team"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">
+          Get answers to the most common questions about timeshare exits.
+        </p>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            How long does the timeshare exit process take?
+            <span>+</span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              The average timeshare exit process takes 6-12 months, depending on
+              the complexity of your situation and the cooperation of the
+              resort. We'll provide you with a more specific timeline during
+              your consultation.
+            </p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            What are the costs involved?
+            <span>+</span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Our fees vary based on your specific timeshare situation. We offer
+              a free consultation to evaluate your case and provide a quote.
+              Remember, we don't charge any upfront fees, and we offer a
+              money-back guarantee if we cannot cancel your timeshare.
+            </p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            Can I exit my timeshare on my own?
+            <span>+</span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              While it's technically possible to exit a timeshare on your own,
+              the process can be complex and time-consuming. Most resorts make
+              it deliberately difficult to cancel contracts. Our expertise
+              increases your chances of success and saves you the hassle of
+              navigating this complicated process.
+            </p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            Will this affect my credit score?
+            <span>+</span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Our legal exit strategies are designed to minimize any impact on
+              your credit score. During your consultation, we'll discuss your
+              specific situation and outline the best approach for your
+              circumstances.
+            </p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            What makes you different from other exit companies?
+            <span>+</span>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Unlike many competitors, we offer a 100% money-back guarantee,
+              charge no upfront fees, and have a proven track record of success.
+              We're transparent about our process, provide regular updates, and
+              genuinely care about helping our clients.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+      <div class="container">
+        <h2>Ready to Exit Your Timeshare?</h2>
+        <p>
+          Schedule your free consultation today and take the first step toward
+          financial freedom.
+        </p>
+        <div class="cta-buttons">
+          <a href="#consultation" class="cta-button"
+            >Get Your Free Consultation</a
+          >
+          <a href="tel:1-800-555-0123" class="cta-button secondary-cta"
+            >Call Us: 1-800-555-0123</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-main">
+          <div class="footer-company">
+            <h3>Freedom Timeshare Exit</h3>
+            <p>
+              We help timeshare owners exit their contracts legally and
+              permanently.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#consultation">Free Consultation</a></li>
+              <li><a href="#how-it-works">How It Works</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <ul>
+              <li><a href="tel:1-800-555-0123">1-800-555-0123</a></li>
+              <li>
+                <a href="mailto:info@freedomtimeshareexit.com"
+                  >info@freedomtimeshareexit.com</a
+                >
+              </li>
+              <li>123 Main Street, Suite 100<br />Orlando, FL 32801</li>
+            </ul>
+          </div>
+
+          <div class="footer-legal">
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Disclaimer</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2025 Freedom Timeshare Exit. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      // Initialize AOS animation library
+      document.addEventListener("DOMContentLoaded", function () {
+        AOS.init({
+          duration: 800,
+          easing: "ease-out",
+          once: true,
+        });
+
+        // Simple JavaScript for FAQ accordion
+        document.querySelectorAll(".faq-question").forEach((question) => {
+          question.addEventListener("click", () => {
+            const answer = question.nextElementSibling;
+            const isOpen = answer.style.maxHeight;
+
+            // Close all answers
+            document.querySelectorAll(".faq-answer").forEach((item) => {
+              item.style.maxHeight = null;
+            });
+
+            document.querySelectorAll(".faq-question span").forEach((span) => {
+              span.textContent = "+";
+            });
+
+            // Open clicked question if it was closed
+            if (!isOpen) {
+              answer.style.maxHeight = answer.scrollHeight + "px";
+              question.querySelector("span").textContent = "−";
+            }
+          });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute("href");
+            const targetElement = document.querySelector(targetId);
+
+            if (targetElement) {
+              window.scrollTo({
+                top: targetElement.offsetTop - 100,
+                behavior: "smooth",
+              });
+            }
+          });
+        });
+
+        // Shrink header on scroll
+        window.addEventListener("scroll", function () {
+          const header = document.querySelector("header");
+          const scrollPosition = window.scrollY;
+
+          if (scrollPosition > 100) {
+            header.style.padding = "10px 0";
+          } else {
+            header.style.padding = "18px 0";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
