@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 import os
@@ -16,6 +16,10 @@ class Submission(db.Model):
     email = db.Column(db.String(120), nullable=False)
     phone = db.Column(db.String(20), nullable=False)
     resort = db.Column(db.String(200))
+
+@app.route('/')
+def index():
+    return render_template('index.html')
 
 @app.route('/submit', methods=['POST'])
 def submit():
